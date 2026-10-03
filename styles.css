@@ -41,6 +41,15 @@ body {
   text-decoration: underline;
 }
 
+.resume-viewer {
+    display: block;
+    width: 100%;
+    height: min(78vh, 1100px);
+    min-height: 560px;
+    border: 1px solid #dee2e6;
+    background-color: #fff;
+}
+
 /* ID selector */
 #page-footer {
     text-align: center;
