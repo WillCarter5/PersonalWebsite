@@ -43,40 +43,68 @@
         <section class="content-module content-module--intro" aria-labelledby="page-title">
             <p class="home-kicker">PERSONAL WEBSITE <span aria-hidden="true">/</span> NOTRE DAME</p>
             <h1 id="page-title">Will Carter</h1>
-            <h2>About Me</h2>
-            <p class="home-lead">I am a Computer Science student at the University of Notre Dame.</p>
-            <p class="home-photo-note">Photo incoming!</p>
+            <div class="home-about-layout">
+                <div class="home-about-copy">
+                    <h2>About Me</h2>
+                    <p class="home-lead">Hi! I'm Will, a computer science student at the University of Notre Dame. I am passionate about completing projects with real benefits that contribute to people's lives in meaningful ways.</p>
+                </div>
+                <figure class="home-portrait">
+                    <div class="home-portrait__slot" role="img" aria-label="Portrait image placeholder">
+                        <span>PORTRAIT<br>IMAGE SLOT</span>
+                    </div>
+                    <figcaption>Photo incoming!</figcaption>
+                </figure>
+            </div>
         </section>
 
-        <section class="content-module" aria-labelledby="projects-title">
+        <section class="content-module content-module--projects" aria-labelledby="projects-title">
             <h2 id="projects-title">Projects</h2>
             <ol class="home-projects">
                 <li>
                     <div>
-                        <h3><a href="https://github.com/WillCarter5/Pathfinder">Notre Dame Campus Pathfinder</a></h3>
+                        <h2><a href="https://github.com/WillCarter5/Pathfinder">Notre Dame Campus Pathfinder</a></h2>
                         <p>Command line tool for calculating the shortest path between two points on the Notre Dame campus.</p>
+                        <span class="home-project-type">Command line</span>
                     </div>
-                    <span class="home-project-type">Command line</span>
                 </li>
                 <li>
                     <div>
-                        <h3>Personal Google Home Page</h3>
+                        <h2>Personal Google Home Page</h2>
                         <p>Personal browser home page built using React. Features dozens of information widgets, including a weather module, a random Bible quote generator, and a NASA Astronomy Picture of the Day display, among other things.</p>
                         <span class="home-project-type">React · No link available</span>
                     </div>
                 </li>
                 <li>
                     <div>
-                        <h3><a href="home.html">This Website!</a></h3>
-                        <p>I've been meaning to make a personal website for a long time. Maybe this will grow into something larger. Who knows?</p>
+                        <h2>Theory of Computing Projects</h2>
+                        <ol>
+                            <li><p>Designed an efficient NFA simulation engine to process input strings without full DFA conversion or exponential backtracking.</p></li>
+                            <li><p>Developed a high-performance regular expression matching engine (similar to Unix grep) that parses regular expressions, converts them into Non-Deterministic Finite Automata (NFAs), and executes linear-time string matching.</p></li>
+                            <li><p>Built a Unix sed-style stream editor and demonstrated its Turing-completeness by compiling Turing machine specifications into executable sed scripts.</p></li>
+                            <li><p>Extended a custom regular expression engine to support backreferences—pushing its matching capabilities beyond context-free languages—and proved the problem's NP-completeness by implementing a SAT solver via polynomial-time reduction.</p></li>
+                        </ol>
+                        <span class="home-project-type">Python · Bash · Makefile · Theory of Computing</span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h2><a href="home.html">This Website!</a></h2>
+                        <p>Initially created for a Programming Paradigms homework assignment, I decided to grow this website into something much larger, to accomplish a long-time goal of mine.</p>
                         <span class="home-project-type">HTML · CSS · JavaScript · Bootstrap</span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h2>pqsh (Process Queue Shell):</h2>
+                        <p>A low-level C99 shell that manages and schedules background jobs across multiple CPU cores using preemptive Round-Robin and FIFO policies.</p>
+                        <span class="home-project-type">Operating Systems · C · Linux · Makefile</span>
                     </div>
                 </li>
             </ol>
             <p class="home-section-link"><a href="projects.html">See the projects page</a></p>
         </section>
 
-        <section class="content-module content-module--last" aria-labelledby="website-title">
+        <section class="content-module content-module--website content-module--last" aria-labelledby="website-title">
             <h2 id="website-title">About This Website</h2>
             <p>This is a project built with HTML, CSS, JS, and Bootstrap. I used JavaScript to make a "copy to clipboard" button for my email on the contacts page. Various css </p>
         </section>
