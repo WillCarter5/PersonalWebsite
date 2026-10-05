@@ -1,0 +1,11 @@
+willcarterv.com {
+    root * /srv
+    encode gzip
+    file_server
+}
+
+site.tail98c4a8.ts.net {
+    root * /srv
+    encode gzip
+    file_server
+}

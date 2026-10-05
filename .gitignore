@@ -1,0 +1,24 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Node/build artifacts if you add them later
+node_modules/
+dist/
+build/
+
+# Private keys
+*.pem
+*.key
