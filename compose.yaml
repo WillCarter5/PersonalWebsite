@@ -1,21 +1,24 @@
 services:
   caddy:
     image: caddy:2-alpine
-    container_name: my-site-caddy
+    container_name: cinco-site-caddy
     restart: unless-stopped
+
+    ports:
+      - "127.0.0.1:8080:80"
 
     volumes:
       - ./site:/srv:ro
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
       - caddy_data:/data
       - caddy_config:/config
-      - ./Caddyfile:/etc/caddy/Caddyfile:ro
 
     networks:
       - web
 
   cloudflared:
     image: cloudflare/cloudflared:latest
-    container_name: my-site-cloudflared
+    container_name: cinco-site-cloudflared
     restart: unless-stopped
 
     command: tunnel --no-autoupdate run
